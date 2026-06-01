@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alunos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos Matriculados - BioMentoria</title>
 
-<link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
@@ -26,7 +26,22 @@
 
         <h2>Alunos Matriculados</h2>
 
+        <p id="contador"></p>
+
+        <input
+            type="text"
+            id="pesquisa"
+            placeholder="Pesquisar aluno pelo nome"
+            onkeyup="pesquisarAluno()">
+
+        <button onclick="limparAlunos()">
+            Limpar Todos os Alunos
+        </button>
+
+        <br><br>
+
         <table>
+
             <thead>
                 <tr>
                     <th>Nome</th>
@@ -35,7 +50,9 @@
                 </tr>
             </thead>
 
-            <tbody id="listaAlunos"></tbody>
+            <tbody id="listaAlunos">
+
+            </tbody>
 
         </table>
 
@@ -43,11 +60,11 @@
 
 </div>
 
-<script src="js/script.js"></script>
+<footer>
+    © 2026 BioMentoria - Profª Luana Schuantes
+</footer>
 
-<script>
-carregarAlunos();
-</script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
