@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>Contato</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - BioMentoria</title>
 
-<link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
@@ -21,19 +22,33 @@
 
 <div class="container">
 
-<div class="card">
+    <div class="card">
 
-<h2>Contato</h2>
+        <h2>Entre em Contato</h2>
 
-<p>Email: contato@biomentoria.com</p>
+        <input
+            type="text"
+            id="nomeContato"
+            placeholder="Seu nome">
 
-<p>WhatsApp: (46) 99999-9999</p>
+        <textarea
+            id="mensagemContato"
+            placeholder="Digite sua mensagem"
+            rows="6"></textarea>
 
-<p>Instagram: @biomentoria</p>
+        <button onclick="enviarMensagem()">
+            Enviar Mensagem
+        </button>
+
+    </div>
 
 </div>
 
-</div>
+<footer>
+    © 2026 BioMentoria - Profª Luana Schuantes
+</footer>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
