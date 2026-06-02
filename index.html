@@ -1,125 +1,163 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BioMentoria</title>
 
-```
-<link rel="stylesheet" href="style.css">
-```
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body{
+            margin:0;
+            font-family:Arial, sans-serif;
+            background:url("imagem1.jpg") no-repeat center center fixed;
+            background-size:cover;
+        }
+
+        /* escurece fundo para melhorar leitura */
+        .overlay{
+            background:rgba(0,0,0,0.55);
+            min-height:100vh;
+            color:white;
+        }
+
+        nav{
+            background:rgba(93,114,96,0.95);
+            padding:15px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 10px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            opacity:0.8;
+        }
+
+        .container{
+            width:90%;
+            max-width:900px;
+            margin:auto;
+            padding-top:60px;
+        }
+
+        .card{
+            background:rgba(255,255,255,0.95);
+            color:#333;
+            padding:30px;
+            border-radius:12px;
+            text-align:center;
+        }
+
+        .card h1{
+            margin-bottom:10px;
+            color:#5d7260;
+        }
+
+        button{
+            background:#5d7260;
+            color:white;
+            border:none;
+            padding:12px 18px;
+            border-radius:6px;
+            cursor:pointer;
+            font-size:16px;
+        }
+
+        button:hover{
+            background:#4a5d4c;
+        }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            color:white;
+            margin-top:40px;
+        }
+
+        /* WhatsApp fixo */
+        .whatsapp-fixo{
+            position:fixed;
+            bottom:20px;
+            right:20px;
+            background:#25D366;
+            color:white;
+            padding:15px 20px;
+            border-radius:50px;
+            text-decoration:none;
+            font-weight:bold;
+            box-shadow:0 4px 10px rgba(0,0,0,0.3);
+            transition:0.3s;
+        }
+
+        .whatsapp-fixo:hover{
+            background:#1ebe5d;
+            transform:scale(1.05);
+        }
+    </style>
 
 </head>
+
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="cadastro.html">Cadastro</a>
-    <a href="alunos.html">Alunos</a>
-    <a href="avaliacoes.html">Avaliações</a>
-    <a href="aulas.html">Aulas</a>
-    <a href="planos.html">Planos</a>
-    <a href="contato.html">Contato</a>
-</nav>
+<div class="overlay">
 
-<header class="banner">
+    <!-- MENU -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="alunos.html">Alunos</a>
+        <a href="avaliacoes.html">Avaliações</a>
+        <a href="aulas.html">Aulas</a>
+        <a href="planos.html">Planos</a>
+        <a href="contato.html">Contato</a>
+    </nav>
 
-```
-<img src="imagem1.jpg" alt="Banner BioMentoria" width="100%">
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="container">
 
-<h1>BioMentoria</h1>
-<p>Mentoria de Biologia com Profª Luana Schuantes</p>
-```
+        <div class="card">
 
-</header>
+            <h1>BioMentoria</h1>
 
-<div class="container">
+            <p>
+                Aprenda Biologia de forma simples, prática e eficiente
+                para ENEM, vestibulares e concursos.
+            </p>
 
-```
-<div class="card">
+            <a href="cadastro.html">
+                <button>Matricule-se Agora</button>
+            </a>
 
-    <h2>Bem-vindo(a)</h2>
-<!DOCTYPE html><html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BioMentoria</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body><nav>
-    <a href="index.html">Home</a>
-    <a href="cadastro.html">Cadastro</a>
-    <a href="alunos.html">Alunos</a>
-    <a href="avaliacoes.html">Avaliações</a>
-    <a href="aulas.html">Aulas</a>
-    <a href="planos.html">Planos</a>
-    <a href="contato.html">Contato</a>
-</nav><header class="banner"><img src="imagem1.jpg" alt="Banner BioMentoria" width="100%">
+            <br><br>
 
-<h1>BioMentoria</h1>
-<p>Mentoria de Biologia com Profª Luana Schuantes</p>
+            <a href="https://wa.me/5546999713928?text=Olá%20Profª%20Luana!%20Quero%20mais%20informações%20sobre%20a%20BioMentoria."
+               target="_blank">
+                <button>📱 Falar no WhatsApp</button>
+            </a>
 
-</header><div class="container"><div class="card">
-    <h2>Bem-vindo(a)</h2>
+        </div>
 
-    <p>
-        Aprenda Biologia de forma simples,
-        dinâmica e eficiente para ENEM,
-        vestibulares e concursos.
-    </p>
+    </div>
 
-    <a href="cadastro.html">
-        <button>Matricule-se Agora</button>
-    </a>
-</div>
-
-<div class="card">
-    <h2>Por que estudar conosco?</h2>
-
-    <p>
-        Aprenda Biologia de forma simples,
-        dinâmica e eficiente para ENEM,
-        vestibulares e concursos.
-    </p>
-
-    <a href="cadastro.html">
-        <button>Matricule-se Agora</button>
-    </a>
-
-    <br><br>
-
-    <a href="https://wa.me/5546999713928?text=Olá%20Profª%20Luana!%20Gostaria%20de%20mais%20informações%20sobre%20a%20BioMentoria."
-       target="_blank">
-        <button>📱 Falar no WhatsApp</button>
-    </a>
+    <!-- RODAPÉ -->
+    <footer>
+        © 2026 BioMentoria - Profª Luana Schuantes
+    </footer>
 
 </div>
 
-<div class="card">
-
-    <h2>Por que estudar conosco?</h2>
-
-    <ul>
-        <li>Material atualizado</li>
-        <li>Exercícios comentados</li>
-        <li>Mentoria personalizada</li>
-        <li>Simulados exclusivos</li>
-    </ul>
-
-</div>
-```
-
-</div>
-
-<footer>
-    © 2026 BioMentoria - Profª Luana Schuantes
-</footer>
-
-<a href="https://wa.me/5546999713928?text=Olá%20Profª%20Luana!%20Gostaria%20de%20mais%20informações%20sobre%20a%20BioMentoria."
-class="whatsapp-fixo"
-target="_blank">
-📱 WhatsApp </a>
+<!-- BOTÃO FLUTUANTE WHATSAPP -->
+<a href="https://wa.me/5546999713928?text=Olá%20Profª%20Luana!%20Quero%20mais%20informações."
+   class="whatsapp-fixo"
+   target="_blank">
+   WhatsApp
+</a>
 
 </body>
 </html>
