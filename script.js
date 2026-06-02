@@ -32,19 +32,22 @@ function cadastrarAluno() {
 
     alert("Aluno cadastrado com sucesso!");
 
+    // Limpa os campos antes de ir para a próxima página
     document.getElementById("nome").value = "";
     document.getElementById("email").value = "";
     document.getElementById("telefone").value = "";
 
     atualizarContador();
+
+    // Redireciona o usuário para a página de alunos logo após o cadastro
+    window.location.href = "alunos.html";
 }
 
 
 // CARREGAR ALUNOS
 function carregarAlunos() {
 
-    const tabela =
-    document.getElementById("listaAlunos");
+    const tabela = document.getElementById("listaAlunos");
 
     if (!tabela) return;
 
@@ -85,16 +88,13 @@ function carregarAlunos() {
 // PESQUISAR ALUNO
 function pesquisarAluno() {
 
-    const campo =
-    document.getElementById("pesquisa");
+    const campo = document.getElementById("pesquisa");
 
     if (!campo) return;
 
-    const texto =
-    campo.value.toLowerCase();
+    const texto = campo.value.toLowerCase();
 
-    const tabela =
-    document.getElementById("listaAlunos");
+    const tabela = document.getElementById("listaAlunos");
 
     let alunos = JSON.parse(
         localStorage.getItem("alunos")
@@ -125,8 +125,7 @@ function pesquisarAluno() {
 // CONTADOR DE ALUNOS
 function atualizarContador() {
 
-    const contador =
-    document.getElementById("contador");
+    const contador = document.getElementById("contador");
 
     if (!contador) return;
 
@@ -164,11 +163,8 @@ function limparAlunos() {
 // FORMULÁRIO DE CONTATO
 function enviarMensagem() {
 
-    const nome =
-    document.getElementById("nomeContato");
-
-    const mensagem =
-    document.getElementById("mensagemContato");
+    const nome = document.getElementById("nomeContato");
+    const mensagem = document.getElementById("mensagemContato");
 
     if (!nome || !mensagem) return;
 
@@ -195,8 +191,7 @@ function enviarMensagem() {
 // MOSTRAR DATA ATUAL
 function mostrarData() {
 
-    const local =
-    document.getElementById("dataAtual");
+    const local = document.getElementById("dataAtual");
 
     if (!local) return;
 
